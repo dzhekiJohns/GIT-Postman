@@ -1,0 +1,240 @@
+JSON
+ 4. Создать внешний репозиторий c названием JSON.
+New    create a new repository JSON
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+git clone https://github.com/dzhekiJohns/JSON.git
+ 6. Внутри локального JSON создать файл “new.json”.
+cat > new.json
+ 7. Добавить файл под гит.
+git add new.json
+ 8. Закоммитить файл.
+git commit -m "message"
+ 9. Отправить файл на внешний GitHub репозиторий.
+git push
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+vim new.json
+{
+	"person": {
+		"name": "Eugene",
+                "surname": "Kirilyuk", 
+		"age": 37,
+		"pets": 0,
+		"salary": 3000
+	}
+}
+
+ 11. Отправить изменения на внешний репозиторий.
+git commit -am "message"  git push
+ 12. Создать файл preferences.json
+vim preferences.json
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна которую хотели бы посетить) в формате JSON.
+{
+	"preferences": {
+		"name": "Eugene",
+		"age": "37",
+		"movie": "Miracle in Cell No. 7",
+		"meals": "cakes",
+		"time of the year": "summer",
+		"country": "Mauritius"
+	}
+}
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+vim skills.json
+{
+"Skills":[
+"Terminal Linux",
+"SQL",
+"Git",
+"Postman",
+"Client-server architecture",
+"Python",
+"Mobile testing"]
+}
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+git add .   git commit -m "message"  git push
+ 16. На веб интерфейсе создать файл bug_report.json.
+add file    create new file
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Commit changes
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+edit this file     
+{
+"bug report form": {
+  "ID number":"#18953",
+  "name": "When I select a product from the main menu, nothing happens",
+  "summary": "There is no option to select a product. Using the mouse, it is not possible to select the order field",
+  "screenshot":null,
+  "author":"Eugene Kirilyuk",
+  "URL":"www.amazon.com/goods/basket",
+  "platform":"Win",
+  "OS":"Windows 11",
+  "browser":"Chrome 115.0.5790.171 (oficial), (64 bit)",
+  "steps to reproduce":"main menu > electrical engineering > notebook > lenovo > lenovo 17b3a7 > add to basket > basket",
+  "expected result":"the product has been added to the cart, you can pay for it, delete it, increase the number of products",
+  "actual result":"it is impossible to perform any actions with the product, it is possible to return only to the previous page",
+  "severity":"high",
+  "priority":"major",
+  "assigned to":"/"}
+}
+
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+commit changes
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+git pull
+
+
+XML
+ 21. Создать внешний репозиторий c названием XML.
+New    create a new repository XML
+ 22. Клонировать репозиторий XML на локальный компьютер.
+git clone https://github.com/dzhekiJohns/XML.git
+ 23. Внутри локального XML создать файл “new.xml”.
+cat > new.xml
+ 24. Добавить файл под гит.
+git add new.xml
+ 25. Закоммитить файл.
+git commit -m "mesage"
+ 26. Отправить файл на внешний GitHub репозиторий.
+git push
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+<?xml version="1.0" encoding="UTF-8" ?>
+<person>
+    <name>Eugene</name>
+    <surname>Kirilyuk</surname>
+    <age>37</age>
+    <pets>0</pets>
+    <salary>3000</salary>
+</person>
+
+ 28. Отправить изменения на внешний репозиторий.
+git commit -am"message"  git push
+ 29. Создать файл preferences.xml
+vim preferences.xml
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+<?xml version="1.0" encoding="UTF-8" ?>
+<preferences>
+    <name>Eugene</name>
+    <age>37</age>
+    <movie>Miracle in Cell No. 7</movie>
+    <meals>cakes</meals>
+    <time_of_the_year>summer</time_of_the_year>
+    <country>Mauritius</country>
+</preferences>
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+vim skills.xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<Skills>Terminal Linux</Skills>
+<Skills>SQL</Skills>
+<Skills>Git</Skills>
+<Skills>Postman</Skills>
+<Skills>Client-server architecture</Skills>
+<Skills>Python</Skills>
+<Skills>Mobile testing</Skills>
+ 32. Сделать коммит в одну строку.
+git add ./ $ git commit -am"message"
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+git push
+ 34. На веб интерфейсе создать файл bug_report.xml.
+add file    create new file
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+commit changes
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+edit this file
+<?xml version="1.0" encoding="UTF-8" ?>
+<bug_report_form>
+    <ID_number>#18953</ID_number>
+    <name>When I select a product from the main menu, nothing happens</name>
+    <summary>There is no option to select a product. Using the mouse, it is not possible to select the order field</summary>
+    <screenshot />
+    <author>Eugene Kirilyuk</author>
+    <URL>www.amazon.com/goods/basket</URL>
+    <platform>Win</platform>
+    <OS>Windows 11</OS>
+    <browser>Chrome 115.0.5790.171 (oficial), (64 bit)</browser>
+    <steps_to_reproduce>main menu > electrical engineering > notebook > lenovo > lenovo 17b3a7 > add to basket > basket</steps_to_reproduce>
+    <expected_result>the product has been added to the cart, you can pay for it, delete it, increase the number of products</expected_result>
+    <actual_result>it is impossible to perform any actions with the product, it is possible to return only to the previous page</actual_result>
+    <severity>high</severity>
+    <priority>major</priority>
+    <assigned_to>/</assigned_to>
+</bug_report_form>
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+commit changes
+ 38. Синхронизировать внешний и локальный репозиторий XML
+git pull
+
+ TXT
+ 1. Создать внешний репозиторий c названием TXT.
+New    create a new repository   TXT
+ 2. Клонировать репозиторий TXT на локальный компьютер.
+git clone https://github.com/dzhekiJohns/TXT.git
+ 3. Внутри локального TXT создать файл “new.txt”.
+cat > new.txt
+ 4. Добавить файл под гит.
+git add new.txt
+ 5. Закомитить файл.
+git commit -m"message"
+ 6. Отправить файл на внешний GitHub репозиторий.
+git push
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+cat >> new.txt
+name: Eugene,
+surname: Kirilyuk, 
+age: 37,
+pets: 0,
+salary: 3000 Euro
+ 8. Отправить изменения на внешний репозиторий.
+git commit -am"message"   git push
+ 9. Создать файл preferences.txt
+cat > preferences.txt
+ 10. В файл "preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+cat >> preferences.txt
+Preferences:
+name: Eugene,
+age: 37,
+movie: Miracle in Cell No. 7,
+meals: cakes,
+time of the year: summer,
+country: Mauritius
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+cat > skills.txt
+Skills:
+Terminal Linux,
+SQL,
+Git,
+Postman,
+Client-server architecture,
+Python,
+Mobile testing
+ 12. Сделать коммит в одну строку.
+git add ./ git commit -m"message"
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+git push
+ 14. На веб интерфейсе создать файл bug_report.txt.
+Add file    Create new file bug_report.txt  
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+commit changes
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+edit this file
+
+     BUG REPORT FORM:
+           ID number: #18953
+                name: When I select a product from the main menu, nothing happens
+             summary: There is no option to select a product. Using the mouse, it is not possible to select the order field
+          screenshot: null
+              author: Eugene Kirilyuk
+                 URL: www.amazon.com/goods/basket
+            platform: Win
+                  OS: Windows 11
+             browser: Chrome 115.0.5790.171 (oficial), (64 bit)
+  steps to reproduce: main menu > electrical engineering > notebook > lenovo > lenovo 17b3a7 > add to basket > basket
+     expected result: the product has been added to the cart, you can pay for it, delete it, increase the number of products
+       actual result: it is impossible to perform any actions with the product, it is possible to return only to the previous page
+            severity: high
+            priority: major
+         assigned to: /
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+commit changes
+ 18. Синхронизировать внешний и локальный репозиторий TXT
+git pull
